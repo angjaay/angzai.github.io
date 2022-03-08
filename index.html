@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light duration-200">
+<html lang="en" class="light scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
 </head>
-<body class="dark:bg-gray-800 ">
-<div class="flex flex-col h-screen justify-between">
+<body class="dark:bg-gray-800 relative">
+
+<div class="flex flex-col h-screen justify-between ">
+  <ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ul>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top" class="fixed px-3 py-2 z-50 bottom-8 right-8 rounded-full bg-sky-500 text-white shadow-sky-500 shadow-md animate-bounce duration-75"><i class="bi bi-arrow-up"></i></button>
 
 
 <!-- navbar -->
 
 
   
-  <header class="bg-white border-gray-200 px-2 sm:px-4 lg:px-12 py-2.5 rounded dark:bg-gray-800 mt-3">
+  <header class="bg-white  dark:bg-gray-800 drop-shadow-md border-gray-200 px-2 sm:px-4 lg:px-16 pb-4 md:pb-2 pt-3 md:pt-5 sticky">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="#" class="flex items-center md:mb-4">
           
@@ -47,16 +63,16 @@
         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 ">
          
           <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+            <a href="#projects" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Design</a>
+            <a href="#design" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Design</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:dark:hover:bg-transparent">Portfolio</a>
+            <a href="#gallery" class="block py-2 pr-4 pl-3 text-gray-700 border-b hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:dark:hover:bg-transparent">Gallery</a>
           </li>
           <li>
             <div class=" block mr-5 my-2 pl-3 pb-2 border-b dark:border-gray-700 md:p-0 md:my-0 md:border-0">
@@ -80,16 +96,16 @@
     </div>
   </header>
 
-  <section class="text-gray-600 body-font js-show-on-scroll">
+  <section  class="text-gray-600 body-font js-show-on-scroll">
     <div class="container mx-auto flex px-5 pb-12 pt-5 md:flex-row flex-col items-center">
       <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-5xl mb-4 font-medium dark:text-white text-gray-900">Hey there!
+        <h1 class="title-font sm:text-4xl text-5xl mb-4 font-medium dark:text-white text-gray-900 drop-shadow-md">Hey there!
           <br class="hidden lg:inline-block">Welcome to my website
         </h1>
         <p class="mb-8 leading-relaxed dark:text-slate-300">Hi! I'm an Adventurer who is on a journey to become the best version oh himself. I'm creating Bold UI/UX with figma and Frontend with Tailwind CSS.</p>
         <div class="flex justify-center">
-          <button class="inline-flex text-white bg-sky-500 border-0 py-3 px-8 focus:outline-none hover:bg-sky-600 rounded-xl text-lg">Let's talk  </button>
-          <button class="ml-4 inline-flex text-gray-800  border-0 py-3 px-7 focus:outline-none cursor-default dark:text-white   rounded-xl text-lg">Portfolio <i class="bi bi-arrow-up-right ml-2"></i></button>
+          <button class="inline-flex text-white bg-emerald-500 border-0 py-3 px-5 md:px-8 focus:outline-none hover:bg-sky-600 rounded-xl text-lg duration-150">Let&#x27;s talk  </button>
+          <button class="ml-2 md:ml-4 inline-flex text-gray-800  border-0 py-3 px-7 focus:outline-none cursor-default dark:text-white   rounded-xl text-lg">Portfolio <i class="bi bi-arrow-up-right ml-2"></i></button>
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -99,7 +115,7 @@
   </section>
 
 
-<section class="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative py-26 lg:mt-12 lg:ml-11 js-show-on-scroll">
+<section id="about" class="max-w-screen-xl p-4  mx-auto px-4 sm:px-6 lg:px-8 xl:mt-32 relative py-26 lg:mt-12 lg:ml-11 js-show-on-scroll">
     <div class="relative">
         <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div class="lg:col-start-2 lg:max-w-2xl ml-auto">
@@ -183,7 +199,7 @@
     </div>
 </section>
 
-<section class="text-gray-600 body-font mt-10 js-show-on-scroll">
+<section id="projects" class="text-gray-600 body-font mt-10 js-show-on-scroll">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap w-full mb-20">
         <div class="lg:w-1/2 w-full mb-5 lg:mb-0">
@@ -194,48 +210,170 @@
       </div>
       <div class="flex flex-wrap -m-4">
         <div class="xl:w-1/4 md:w-1/2 p-4 relative">
-          <div class=" bg-white dark:bg-slate-800  dark:text-white p-6 rounded-lg shadow-lg  border ">
+          <div class=" bg-white dark:bg-slate-800  dark:text-white p-6 rounded-lg drop-shadow-lg  border ">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="Assets/Images/bahasaku.png" alt="content">
             <h3 class="tracking-widest text-sky-500 text-xs font-medium title-font">UI/UX</h3>
             <h2 class="text-lg text-gray-900 font-medium title-font mb-4 dark:text-white">BahasaKu</h2>
             <p class="leading-relaxed text-base mb-3 pb-6">Mobile appliaction for learning indonesian local language with interactive quiz.</p>
-            <a href="https://www.figma.com/file/UybpvVGHH2yplQAyrznYPL/Bahasaku?node-id=208%3A78" target="blank_" class="py-1 px-5 rounded-md absolute border bottom-8 right-14">project <i class="bi bi-arrow-up-right-circle ml-2"></i></a>
+            <a href="https://www.figma.com/file/UybpvVGHH2yplQAyrznYPL/Bahasaku?node-id=208%3A78" target="blank_" class="py-1 px-5 rounded-md absolute border bottom-5 right-11">project <i class="bi bi-arrow-up-right-circle ml-2"></i></a>
           </div>
         </div>
         <div class="xl:w-1/4 md:w-1/2 p-4 relative">
-          <div class="bg-white dark:bg-slate-800  dark:text-white p-6 rounded-lg shadow-lg  border">
+          <div class="bg-white dark:bg-slate-800  dark:text-white p-6 rounded-lg drop-shadow-lg  border">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="Assets/Images/forumly.png" alt="content">
             <h3 class="tracking-widest text-sky-500 text-xs font-medium title-font">UI/UX & Frontend</h3>
             <h2 class="text-lg text-gray-900 font-medium title-font mb-4 dark:text-white">Forumly</h2>
-            <p class="leading-relaxed text-base mb-3 pb-6">Website forum for student college discussion and sharing their opinion.</p>
-            <a href="https://github.com/saikocode/forumly" target="blank_" class="py-1 px-5 rounded-md absolute border bottom-8 right-14">project <i class="bi bi-arrow-up-right-circle ml-2"></i></a>
+            <p class="leading-relaxed text-base mb-3 pb-6">Website forum for college student discussion created with Laravel and Tailwind CSS.</p>
+            <a href="https://github.com/saikocode/forumly" target="blank_" class="py-1 px-5 rounded-md absolute border bottom-5 right-11">project <i class="bi bi-arrow-up-right-circle ml-2"></i></a>
             
           </div>
         </div>
         <div class="xl:w-1/4 md:w-1/2 p-4 relative">
-          <div class="bg-white dark:bg-slate-800  dark:text-white p-6 rounded-lg shadow-lg  border">
+          <div class="bg-white dark:bg-slate-800  dark:text-white p-6 rounded-lg drop-shadow-lg  border">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="Assets/Images/resroman.png" alt="content">
             <h3 class="tracking-widest text-sky-500 text-xs font-medium title-font">UI & Frontend</h3>
             <h2 class="text-lg text-gray-900 font-medium title-font mb-4 dark:text-white">Restoman</h2>
-            <p class="leading-relaxed text-base mb-3 pb-6">Web-based information system to manage a restaurant with laravel and bootstrap.</p>
-            <a href="https://github.com/saikocode/restoman" target="blank_" class="py-1 px-5 rounded-md absolute border bottom-8 right-14">project <i class="bi bi-arrow-up-right-circle ml-2"></i></a>
+            <p class="leading-relaxed text-base mb-3 pb-6">Web-based information system to manage a restaurant with native php and bootstrap.</p>
+            <a href="https://github.com/saikocode/restoman" target="blank_" class="py-1 px-5 rounded-md absolute border bottom-5 right-11">project <i class="bi bi-arrow-up-right-circle ml-2"></i></a>
           </div>
         </div>
         <div class="xl:w-1/4 md:w-1/2 p-4 relative">
-          <div class="bg-white dark:bg-slate-800  dark:text-white p-6 rounded-lg shadow-lg  border">
+          <div class="bg-white dark:bg-slate-800  dark:text-white p-6 rounded-lg drop-shadow-lg  border">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="Assets/Images/wibukan.png" alt="content">
             <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Frontend</h3>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-4 dark:text-white">Wibu-kan</h2>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4 dark:text-white">Wibu-kan <span class="text-red-500">(on progress)</span> </h2>
             <p class="leading-relaxed text-base mb-3 pb-6">Website for streaming anime with indonesian subtitle and for learning japanese language.</p>
-            <a href="https://github.com/saikocode/wibu-kan" target="blank_" class="py-1 px-5 rounded-md absolute border bottom-8 right-14">project <i class="bi bi-arrow-up-right-circle ml-2"></i></a>
+            <a  target="blank_" class="py-1 px-5 rounded-md absolute border bottom-5 right-11 cursor-not-allowed">project <i class="bi bi-arrow-up-right-circle ml-2"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+  <section id="design" class="text-gray-600 body-font js-show-on-scroll">
+    <div class="container px-5 py-14 mx-auto">
+      <div class="flex flex-col text-center w-full mb-10">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white">Design</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base dark:text-slate-200">Here some graphic design that I created with Adobe Illustrator and Figma.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/design/log.png">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">LOGO</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">LOG Esport</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl bg-white inset-0 w-full h-full px-14 py-3 object-cover object-center" src="Assets/design/h&m.png">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">LOGO</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Himitsu x Mein Kampf</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/Images/resroman.png">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">LOGO</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Restoman</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/Images/forumly.png">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">LOGO</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Forumly</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/design/polaris.png">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">LOGO</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Polaris</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/design/loneknight.png">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">LOGO</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Lone Knight</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/design/kasirman.png">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">LOGO</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Kasirman</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/design/smooooth.jpg">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">GRAPHIC DESIGN</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">8 Gradient</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/design/Night with u 2.jpg">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">GRAPHIC DESIGN</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Night with you</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/design/lanscape.jpg">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">GRAPHIC DESIGN</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Travel badge</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative ">
+            <img alt="gallery" class="shadow-xl absolute rounded-xl inset-0 w-full h-full object-cover object-center" src="Assets/design/lanscape 2.jpg">
+            <div class="px-8 py-10 relative z-10 w-full rounded-xl border-4 border-gray-200 bg-white duration-200 tra opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-sky-500 mb-1">GRAPHIC DESIGN</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Nature badge</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="text-gray-600 body-font js-show-on-scroll">
+    <div class="container px-5 py-14 mx-auto flex flex-wrap">
       <div class="flex w-full mb-20 flex-wrap">
         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4 dark:text-white">Gallery</h1>
         <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base dark:text-slate-200">I like to take a picture of the sky, here some of them.</p>
@@ -327,6 +465,25 @@ targets.forEach(function (target) {
   target.classList.add("opacity-0");
   observer.observe(target);
 });
+
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 </script>
 </html>
